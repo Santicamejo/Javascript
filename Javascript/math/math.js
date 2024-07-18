@@ -40,6 +40,19 @@ console.log({
     'El perimetro total del triangulo es' : perimetroTotalTriangulo + ' cm',
     'Y el area del triangulo es' : calculadoraTrianguloArea(6,4) + ' cm^2'
 });
+
+function TrianguloEscaleno(base, lado2, lado3){
+
+    if(base == lado2 || base == lado3 || lado2 == lado3 ) {
+        console.log("Para ser un triangulo Escaleno debe tener todos los lados distintos")
+    }else{
+        s = (base + lado2 + lado3) /2
+        // ((12 * (12-6))*(12-8))*(12-10)
+        h = ((2/base) * (Math.sqrt(((s * (s-base))*(s-lado2))*(s-lado3)))).toFixed(2);
+        return alert("La altura del tiangulo es: " + parseInt(h));
+    }   
+};
+
 console.groupEnd('triangulo');
 
 console.group('%c Circulo', 'color: DarkOliveGreen; font-size: 20px;')
