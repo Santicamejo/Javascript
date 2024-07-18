@@ -1,0 +1,22 @@
+:root {
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: inline;
+    text-align: center;
+  }
+#carrito{
+    border-radius: 30px;
+    width: 900px;
+    border: 10px black;
+    border-style: double;
+}
+#imagen-producto{
+    width: 100px;
+    height: auto;
+}
