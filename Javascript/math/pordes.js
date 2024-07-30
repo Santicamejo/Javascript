@@ -1,8 +1,24 @@
-const inputValue = document.getElementById('inputValue');
-const inputDiscount = document.getElementById('inputDiscount');
-const btn = document.querySelector('#calcular');
+const inputValue = document.getElementById('itemPrice');
+const inputDiscount = document.getElementById('cupon');
+const btn = document.getElementById('botton');
 
-btn.addEventListener('click', finalDiscount);
+btn.addEventListener('click', cuponDiscount);
+
+
+
+function cuponDiscount() {
+
+    const price = Number(inputValue.value);
+    const userDiscount = Number(inputDiscount.value);
+    const activeDiscounts = ['SA123', 'SA456', 'SA789'];
+
+    if(userDiscount === activeDiscounts) {
+        alert("cuponValido")
+    }else{
+        alert("Cupon no valido")
+    }
+}
+
 
 function finalDiscount() {
 
@@ -19,4 +35,4 @@ function finalDiscount() {
     }
         const finalPrice = (price * (100 - discount)) / 100;
         result.innerText = "el precio del producto es: "+ price +"$ y con el descuento de: "+ discount +"% queda en: "+ finalPrice +"$"
-};
+}
