@@ -143,3 +143,18 @@ h2{
   padding-bottom: 30px;
   padding-top: 30px;
 }
+
+#result{
+  color: green;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#itemPrice {
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.inactive{
+  display: none;
+}
